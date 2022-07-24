@@ -1,9 +1,16 @@
 package com.cg.instanceofoperator;
-
-public class Childinstance {
+class A
+{
+	
+}
+public class Childinstance extends A {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		ChildInstance c=new ChildInstance();
+		//c is the obj of parent class"A" because "Childinstance"class accessing the
+		System.out.println(c instanceof A);
+		System.out.println(c instanceof ChildInstance);
 
 	}
 
